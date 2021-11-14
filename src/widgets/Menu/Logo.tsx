@@ -42,11 +42,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
 
   return (
     <Flex>
-      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="15px">
+      <MenuButton aria-label="Toggle menu" onClick={togglePush} mr="20px">
         {isPushed ? (
-          <HamburgerCloseIcon width="15px" color="textSubtle" />
+          <HamburgerCloseIcon width="20px" color="textSubtle" />
         ) : (
-          <HamburgerIcon width="15px" color="textSubtle" />
+          <HamburgerIcon width="20px" color="textSubtle" />
         )}
       </MenuButton>
       {isAbsoluteUrl ? (

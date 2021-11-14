@@ -4,7 +4,7 @@ import { CheckboxProps, scales } from "./types";
 const getScale = ({ scale }: CheckboxProps) => {
   switch (scale) {
     case scales.SM:
-      return "15px";
+      return "20px";
     case scales.MD:
     default:
       return "32px";

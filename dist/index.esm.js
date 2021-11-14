@@ -107,7 +107,7 @@ var getColor = function (_a) {
 };
 var getFontSize = function (_a) {
     var fontSize = _a.fontSize, small = _a.small;
-    return small ? "20px" : fontSize || "14px";
+    return small ? "20px" : fontSize || "18px";
 };
 var Text = styled.div(templateObject_1$1 || (templateObject_1$1 = __makeTemplateObject(["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n"], ["\n  color: ", ";\n  font-size: ", ";\n  font-weight: ", ";\n  line-height: 1.5;\n  ", "\n  ", "\n"])), getColor, getFontSize, function (_a) {
     var bold = _a.bold;
@@ -159,7 +159,7 @@ var getButtonVariantProp = function (prop) { return function (_a) {
     var theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? variants.PRIMARY : _b;
     return theme.button[variant][prop];
 }; };
-var StyledButton = styled.button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 20px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 20px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"])), getButtonVariantProp("background"), getButtonVariantProp("border"), getButtonVariantProp("boxShadow"), getButtonVariantProp("color"), function (_a) {
+var StyledButton = styled.button(templateObject_1$2 || (templateObject_1$2 = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 24px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"], ["\n  align-items: center;\n  background-color: ", ";\n  border: ", ";\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  cursor: pointer;\n  display: inline-flex;\n  font-family: inherit;\n  font-size: 24px;\n  font-weight: 600;\n  /* max-content instead of auto for Safari fix */\n  width: ", ";\n  height: ", ";\n  line-height: 1;\n  letter-spacing: 0.03em;\n  justify-content: center;\n  outline: 0;\n  padding: ", ";\n  transition: background-color 0.2s;\n  opacity: ", ";\n\n  &:hover:not(:disabled):not(.button--disabled):not(:active) {\n    background-color: ", ";\n    border-color: ", ";\n  }\n\n  &:focus:not(:active) {\n    box-shadow: 0 0 0 2px ", ";\n  }\n\n  &:active {\n    background-color: ", ";\n    box-shadow: ", ";\n  }\n\n  ", "\n  ", "\n  ", "\n"])), getButtonVariantProp("background"), getButtonVariantProp("border"), getButtonVariantProp("boxShadow"), getButtonVariantProp("color"), function (_a) {
     var fullWidth = _a.fullWidth;
     return (fullWidth ? "100%" : "max-content");
 }, function (_a) {
@@ -579,13 +579,13 @@ var Alert = function (_a) {
     var Icon = getIcon(variant);
     return (React.createElement(StyledAlert, null,
         React.createElement(IconLabel, { variant: variant, hasDescription: !!children },
-            React.createElement(Icon, { color: "currentColor", width: "15px" })),
+            React.createElement(Icon, { color: "currentColor", width: "20px" })),
         React.createElement(Details, { hasHandler: !!onClick },
             React.createElement(Text, { bold: true }, title),
             typeof children === "string" ? React.createElement(Text, { as: "p" }, children) : children),
         onClick && (React.createElement(CloseHandler, null,
             React.createElement(IconButton, { size: "sm", variant: "text", onClick: onClick },
-                React.createElement(Icon$k, { width: "15px", color: "currentColor" }))))));
+                React.createElement(Icon$k, { width: "20px", color: "currentColor" }))))));
 };
 var templateObject_1$5, templateObject_2$1, templateObject_3$1, templateObject_4;
 
@@ -611,7 +611,7 @@ var insertSeparators = function (items, separator) {
         ]);
     }, []);
 };
-var DefaultSeparator = React.createElement(Icon$i, { color: "currentColor", width: "15px" });
+var DefaultSeparator = React.createElement(Icon$i, { color: "currentColor", width: "20px" });
 var Breadcrumbs = function (_a) {
     var _b = _a.separator, separator = _b === void 0 ? DefaultSeparator : _b, children = _a.children;
     var validItems = Children.toArray(children).filter(function (child) { return isValidElement(child); });
@@ -695,7 +695,7 @@ var Card = function (_a) {
 
 var CardBody = styled.div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  ", "\n"], ["\n  ", "\n"])), space);
 CardBody.defaultProps = {
-    p: "15px",
+    p: "20px",
 };
 var templateObject_1$a;
 
@@ -704,7 +704,7 @@ var CardHeader = styled.div(templateObject_1$b || (templateObject_1$b = __makeTe
     return theme.card.cardHeaderBackground;
 }, space);
 CardHeader.defaultProps = {
-    p: "15px",
+    p: "20px",
 };
 var templateObject_1$b;
 
@@ -713,7 +713,7 @@ var CardFooter = styled.div(templateObject_1$c || (templateObject_1$c = __makeTe
     return theme.colors.borderColor;
 }, space);
 CardFooter.defaultProps = {
-    p: "15px",
+    p: "20px",
 };
 var templateObject_1$c;
 
@@ -740,7 +740,7 @@ var getScale = function (_a) {
     var scale = _a.scale;
     switch (scale) {
         case scales.SM:
-            return "15px";
+            return "20px";
         case scales.MD:
         default:
             return "32px";
@@ -824,10 +824,10 @@ var sizes$1 = {
 var _a;
 var style = (_a = {},
     _a[sizes$1.MD] = {
-        fontSize: "20px",
+        fontSize: "24px",
     },
     _a[sizes$1.LG] = {
-        fontSize: "15px",
+        fontSize: "20px",
     },
     _a[sizes$1.XL] = {
         fontSize: "40px",
@@ -945,7 +945,7 @@ var getHeight = function (_a) {
             return "40px";
     }
 };
-var Input = styled.input(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 20px;\n  height: ", ";\n  outline: 0;\n  padding: 0 15px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 20px;\n  height: ", ";\n  outline: 0;\n  padding: 0 15px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
+var Input = styled.input(templateObject_1$j || (templateObject_1$j = __makeTemplateObject(["\n  background-color: ", ";\n  border: 0;\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 24px;\n  height: ", ";\n  outline: 0;\n  padding: 0 15px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"], ["\n  background-color: ", ";\n  border: 0;\n  border-radius: 15px;\n  box-shadow: ", ";\n  color: ", ";\n  display: block;\n  font-size: 24px;\n  height: ", ";\n  outline: 0;\n  padding: 0 15px;\n  width: 100%;\n\n  &::placeholder {\n    color: ", ";\n  }\n\n  &:disabled {\n    background-color: ", ";\n    box-shadow: none;\n    color: ", ";\n    cursor: not-allowed;\n  }\n\n  &:focus:not(:disabled) {\n    box-shadow: ", ";\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.input;
 }, getBoxShadow$1, function (_a) {
@@ -998,7 +998,7 @@ var getScale$1 = function (_a) {
     var scale = _a.scale;
     switch (scale) {
         case scales$2.SM:
-            return "15px";
+            return "20px";
         case scales$2.MD:
         default:
             return "32px";
@@ -1047,8 +1047,8 @@ var getThemeTextColor = function (_a) {
     var outline = _a.outline, _b = _a.variant, variant = _b === void 0 ? "primary" : _b, theme = _a.theme;
     return outline ? getColor$1(variant, theme) : "#ffffff";
 };
-var StyledTag = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: 2px solid ", ";\n  border-radius: 15px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 20px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"], ["\n  align-items: center;\n  background-color: ",
-    ";\n  border: 2px solid ", ";\n  border-radius: 15px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 20px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"])), function (_a) {
+var StyledTag = styled.div(templateObject_1$n || (templateObject_1$n = __makeTemplateObject(["\n  align-items: center;\n  background-color: ", ";\n  border: 2px solid ", ";\n  border-radius: 15px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 24px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"], ["\n  align-items: center;\n  background-color: ",
+    ";\n  border: 2px solid ", ";\n  border-radius: 15px;\n  color: ", ";\n  display: inline-flex;\n  font-size: 24px;\n  font-weight: 400;\n  height: 28px;\n  line-height: 1.5;\n  padding: 0 8px;\n  white-space: nowrap;\n\n  svg {\n    fill: ", ";\n  }\n"])), function (_a) {
     var outline = _a.outline, theme = _a.theme, _b = _a.variant, variant = _b === void 0 ? "primary" : _b;
     return outline ? "transparent" : getColor$1(variant, theme);
 }, function (_a) {
@@ -1547,7 +1547,7 @@ var shadows = {
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
     small: "4px",
-    default: "15px",
+    default: "20px",
     card: "32px",
     circle: "50%",
 };
@@ -1745,7 +1745,7 @@ var StyledModal = styled.div(templateObject_1$u || (templateObject_1$u = __makeT
 var ModalHeader = styled.div(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 15px;\n"], ["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 15px;\n"])));
 var ModalTitle = styled(Flex)(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
 var Modal = function (_a) {
-    var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "15px" : _c;
+    var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "20px" : _c;
     return (React.createElement(StyledModal, null,
         React.createElement(ModalHeader, null,
             React.createElement(ModalTitle, null,
@@ -2127,7 +2127,7 @@ var Logo$1 = function (_a) {
         React.createElement(Icon$q, { className: "mobile-icon" }),
         React.createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React.createElement(Flex, null,
-        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "15px" }, isPushed ? (React.createElement(Icon$L, { width: "15px", color: "textSubtle" })) : (React.createElement(Icon$K, { width: "15px", color: "textSubtle" }))),
+        React.createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "20px" }, isPushed ? (React.createElement(Icon$L, { width: "20px", color: "textSubtle" })) : (React.createElement(Icon$K, { width: "20px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React.createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React.createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$y;
@@ -2283,7 +2283,7 @@ var MenuEntry = styled.div(templateObject_3$6 || (templateObject_3$6 = __makeTem
     return (secondary ? "0 32px" : "0 15px");
 }, function (_a) {
     var secondary = _a.secondary;
-    return (secondary ? "14px" : "15px");
+    return (secondary ? "18px" : "20px");
 }, function (_a) {
     var secondary = _a.secondary, theme = _a.theme;
     return (secondary ? theme.colors.background : "transparent");
@@ -2357,7 +2357,7 @@ var PanelBody = function (_a) {
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (React.createElement(Container$3, null, links.map(function (entry) {
         var Icon = Icons[entry.icon];
-        var iconElement = React.createElement(Icon, { width: "15px", mr: "8px" });
+        var iconElement = React.createElement(Icon, { width: "20px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React.createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
@@ -2391,11 +2391,11 @@ var PanelFooter = function (_a) {
     return (React.createElement(Container$4, null,
         React.createElement(SocialEntry, null,
             cakePriceUsd ? (React.createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React.createElement(Icon$v, { width: "15px", mr: "8px" }),
+                React.createElement(Icon$v, { width: "20px", mr: "8px" }),
                 React.createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React.createElement(Skeleton, { width: 80, height: 24 })),
             React.createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
-                var iconProps = { width: "15px", color: "textSubtle", style: { cursor: "pointer" } };
+                var iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
                 var mr = index < socials.length - 1 ? "8px" : 0;
                 if (social.items) {
                     return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
@@ -2406,9 +2406,9 @@ var PanelFooter = function (_a) {
         React.createElement(SettingsEntry, null,
             React.createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
                 React.createElement(Flex, { alignItems: "center" },
-                    React.createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "15px" }),
+                    React.createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "20px" }),
                     React.createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
-                    React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "15px" }))))));
+                    React.createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "20px" }))))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
@@ -2493,7 +2493,7 @@ var WalletCard = function (_a) {
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
         }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
-        React.createElement(Text, { bold: true, color: "primary", mr: "15px" }, title),
+        React.createElement(Text, { bold: true, color: "primary", mr: "20px" }, title),
         React.createElement(Icon, { width: "32px" })));
 };
 
@@ -2541,7 +2541,7 @@ var AccountModal = function (_a) {
     return (React.createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React.createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React.createElement(Flex, { mb: "32px" },
-            React.createElement(LinkExternal, { small: true, href: "https://explorer-mainnet.maticvigil.com/address/" + account, mr: "15px" }, "View on Matic Explorer"),
+            React.createElement(LinkExternal, { small: true, href: "https://explorer-mainnet.maticvigil.com/address/" + account, mr: "20px" }, "View on Matic Explorer"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
             React.createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
@@ -2758,7 +2758,7 @@ var ToastContainer = function (_a) {
 };
 var templateObject_1$J;
 
-var ResetCSS = createGlobalStyle(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 15px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Franklin Gothic Heavy', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 15px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Franklin Gothic Heavy', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"])), function (_a) {
+var ResetCSS = createGlobalStyle(templateObject_1$K || (templateObject_1$K = __makeTemplateObject(["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 18px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Franklin Gothic Heavy', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"], ["\n  /* prettier-ignore */\n  html, body, div, span, applet, object, iframe,\n  h1, h2, h3, h4, h5, h6, p, blockquote, pre,\n  a, abbr, acronym, address, big, cite, code,\n  del, dfn, em, img, ins, kbd, q, s, samp,\n  small, strike, strong, sub, sup, tt, var,\n  b, u, i, center,\n  dl, dt, dd, ol, ul, li,\n  fieldset, form, label, legend,\n  table, caption, tbody, tfoot, thead, tr, th, td,\n  article, aside, canvas, details, embed, \n  figure, figcaption, footer, header, hgroup, \n  menu, nav, output, ruby, section, summary,\n  time, mark, audio, video {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    font-size: 100%;\n    vertical-align: baseline;\n  }\n  /* HTML5 display-role reset for older browsers */\n  /* prettier-ignore */\n  article, aside, details, figcaption, figure, \n  footer, header, hgroup, menu, nav, section {\n    display: block;\n  }\n  body {\n    line-height: 1;\n    font-size: 18px;\n  }\n  ol,\n  ul {\n    list-style: disc;\n    list-style-position: inside;\n  }\n  blockquote,\n  q {\n    quotes: none;\n  }\n  blockquote:before,\n  blockquote:after,\n  q:before,\n  q:after {\n    content: \"\";\n    content: none;\n  }\n  table {\n    border-collapse: collapse;\n    border-spacing: 0;\n  }\n  a {\n    color: inherit;\n    text-decoration: none;\n  }\n  [role=\"button\"] {\n    cursor: pointer;\n  }\n  *,\n  *::before,\n  *::after {\n    box-sizing: border-box;\n  }\n  * {\n    font-family: 'Franklin Gothic Heavy', sans-serif;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n  }\n  /* Scrollbar */\n  ::-webkit-scrollbar {\n    width: 8px;\n  }\n  ::-webkit-scrollbar-thumb {\n    background: ", "; \n    border-radius: 8px;\n  }\n  ::-webkit-scrollbar-track {\n    box-shadow: inset 0 0 5px ", "; \n    border-radius: 10px;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.colors.textSubtle;
 }, function (_a) {

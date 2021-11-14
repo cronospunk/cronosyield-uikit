@@ -26,7 +26,7 @@ export const Default: React.FC = () => {
     <div>
       {Object.keys(scales).map((key) => (
         <>
-          <Heading mb="15px">{key}</Heading>
+          <Heading mb="20px">{key}</Heading>
           <Row>
             <Input type="text" scale={scales[key]} value="Value" />
             <Input type="text" scale={scales[key]} placeholder="Placeholder..." />

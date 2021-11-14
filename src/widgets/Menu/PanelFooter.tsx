@@ -53,7 +53,14 @@ const SocialEntry = styled.div`
   padding: 0 15px;
 `;
 
-const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, cakePriceUsd, priceLink }) => {
+const PanelFooter: React.FC<Props> = ({
+  isPushed,
+  pushNav,
+  toggleTheme,
+  isDark,
+  cakePriceUsd,
+  priceLink,
+}) => {
   if (!isPushed) {
     return (
       <Container>
@@ -69,7 +76,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
       <SocialEntry>
         {cakePriceUsd ? (
           <PriceLink href={priceLink} target="_blank">
-            <PancakeRoundIcon width="20px" mr="8px" />
+            <PancakeRoundIcon width="15px" mr="8px" />
             <Text color="textSubtle" bold>{`$${cakePriceUsd.toFixed(3)}`}</Text>
           </PriceLink>
         ) : (
@@ -78,7 +85,7 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
         <Flex>
           {socials.map((social, index) => {
             const Icon = Icons[social.icon];
-            const iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
+            const iconProps = { width: "15px", color: "textSubtle", style: { cursor: "pointer" } };
             const mr = index < socials.length - 1 ? "8px" : 0;
             if (social.items) {
               return (
@@ -103,11 +110,11 @@ const PanelFooter: React.FC<Props> = ({ isPushed, pushNav, toggleTheme, isDark, 
         <Button variant="text" onClick={() => toggleTheme(!isDark)}>
           {/* alignItems center is a Safari fix */}
           <Flex alignItems="center">
-            <SunIcon color={isDark ? "textDisabled" : "text"} width="20px" />
+            <SunIcon color={isDark ? "textDisabled" : "text"} width="15px" />
             <Text color="textDisabled" mx="4px">
               /
             </Text>
-            <MoonIcon color={isDark ? "text" : "textDisabled"} width="20px" />
+            <MoonIcon color={isDark ? "text" : "textDisabled"} width="15px" />
           </Flex>
         </Button>
       </SettingsEntry>

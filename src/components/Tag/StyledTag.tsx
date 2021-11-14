@@ -17,7 +17,7 @@ export const StyledTag = styled.div<ThemedProps>`
   border-radius: 15px;
   color: ${getThemeTextColor};
   display: inline-flex;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   height: 28px;
   line-height: 1.5;

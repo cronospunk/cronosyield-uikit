@@ -99,15 +99,15 @@ export const links = [
       // },
       {
         label: "Github",
-        href: "https://github.com/cronosyield/",
+        href: "https://github.com/goosedefi/",
       },
       {
         label: "Docs",
-        href: "https://cronosyield.gitbook.io/goose-finance/",
+        href: "https://goosedefi.gitbook.io/goose-finance/",
       },
       {
         label: "Blog",
-        href: "https://cronosyield.medium.com/",
+        href: "https://goosefinance.medium.com/",
       },
     ],
   },
@@ -120,19 +120,18 @@ export const socials = [
     items: [
       {
         label: "Discussion",
-        href: "https://t.me/CronosYield",
+        href: "https://t.me/Cronoswap",
+      },
+      {
+        label: "Announcements",
+        href: "https://t.me/CronoswapAnn",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/PunkCronos",
-  },
-  {
-    label: "Discord",
-    icon: "DiscordIcon",
-    href: "https://discord.gg/DGZBBkqdms",
+    href: "https://twitter.com/Cronoswap",
   },
 ];
 

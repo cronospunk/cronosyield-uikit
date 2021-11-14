@@ -14,7 +14,7 @@ import {
 import Text from "../Text/Text";
 import { FooterProps } from "./types";
 // import CakePrice from "../CakePrice/CakePrice";
-import { ArrowForwardIcon, SvgProps } from "../Svg";
+import { ArrowForwardIcon,SvgProps } from "../Svg";
 import { Button } from "../Button";
 import * as IconModule from "../../widgets/Menu/icons";
 import { MENU_ENTRY_HEIGHT } from "../../widgets/Menu/config";
@@ -31,13 +31,14 @@ const MenuItem: React.FC<FooterProps> = ({
   buyCakeLabel,
   ...props
 }) => {
+
   const SettingsEntry = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: ${MENU_ENTRY_HEIGHT}px;
-    padding: 0 8px;
-  `;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: ${MENU_ENTRY_HEIGHT}px;
+  padding: 0 8px;
+`;
   return (
     <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
@@ -68,7 +69,9 @@ const MenuItem: React.FC<FooterProps> = ({
               ))}
             </StyledList>
           ))}
-          <Box display={["none", null, "block"]}>{/* <LogoWithTextIcon isDark width="160px" /> */}</Box>
+          <Box display={["none", null, "block"]}>
+            {/* <LogoWithTextIcon isDark width="160px" /> */}
+          </Box>
         </Flex>
         <StyledSocialLinks order={[2]} pb={["42px", null, "32px"]} mb={["0", null, "32px"]} />
         <StyledToolsContainer
@@ -77,24 +80,28 @@ const MenuItem: React.FC<FooterProps> = ({
           justifyContent="space-between"
         >
           <Flex order={[2, null, 1]} alignItems="center">
-            <SettingsEntry>
-              <Button variant="text" onClick={() => toggleTheme(!isDark)}>
-                {/* alignItems center is a Safari fix */}
-                <Flex alignItems="center">
-                  <SunIcon color={isDark ? "textDisabled" : "text"} width="20px" />
-                  <Text color="textDisabled" mx="4px">
-                    /
-                  </Text>
-                  <MoonIcon color={isDark ? "text" : "textDisabled"} width="20px" />
-                </Flex>
-              </Button>
-            </SettingsEntry>
+          <SettingsEntry>
+        <Button variant="text" onClick={() => toggleTheme(!isDark)}>
+          {/* alignItems center is a Safari fix */}
+          <Flex alignItems="center">
+            <SunIcon color={isDark ? "textDisabled" : "text"} width="15px" />
+            <Text color="textDisabled" mx="4px">
+              /
+            </Text>
+            <MoonIcon color={isDark ? "text" : "textDisabled"} width="15px" />
+          </Flex>
+        </Button>
+      </SettingsEntry>
           </Flex>
           <Flex order={[1, null, 2]} mb={["24px", null, "0"]} justifyContent="space-between" alignItems="center">
             <Box mr="20px">
               {/* <CakePrice cakePriceUsd={cakePriceUsd} color={darkColors.textSubtle as keyof Colors} /> */}
             </Box>
-            <Button endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}>{buyCakeLabel}</Button>
+            <Button
+              endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
+            >
+              {buyCakeLabel}
+            </Button>
           </Flex>
         </StyledToolsContainer>
       </Flex>

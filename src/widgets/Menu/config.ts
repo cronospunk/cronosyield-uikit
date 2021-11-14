@@ -120,18 +120,14 @@ export const socials = [
     items: [
       {
         label: "Discussion",
-        href: "https://t.me/Cronoswap",
-      },
-      {
-        label: "Announcements",
-        href: "https://t.me/CronoswapAnn",
+        href: "https://t.me/Cronosyield",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/Cronoswap",
+    href: "https://twitter.com/PunkCronos",
   },
 ];
 

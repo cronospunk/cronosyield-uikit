@@ -47,7 +47,7 @@ const Modal: React.FC<Props> = ({
   onBack,
   children,
   hideCloseButton = false,
-  bodyPadding = "15px",
+  bodyPadding = "20px",
 }) => (
   <StyledModal>
     <ModalHeader>

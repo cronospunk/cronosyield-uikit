@@ -26,7 +26,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
       mb={mb}
       id={`wallet-connect-${title.toLocaleLowerCase()}`}
     >
-      <Text bold color="primary" mr="15px">
+      <Text bold color="primary" mr="20px">
         {title}
       </Text>
       <Icon width="32px" />

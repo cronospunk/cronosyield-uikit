@@ -10,7 +10,7 @@ const CardHeader = styled.div<CardHeaderProps>`
 `;
 
 CardHeader.defaultProps = {
-  p: "15px",
+  p: "20px",
 };
 
 export default CardHeader;

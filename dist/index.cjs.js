@@ -592,13 +592,13 @@ var Alert = function (_a) {
     var Icon = getIcon(variant);
     return (React__default['default'].createElement(StyledAlert, null,
         React__default['default'].createElement(IconLabel, { variant: variant, hasDescription: !!children },
-            React__default['default'].createElement(Icon, { color: "currentColor", width: "15px" })),
+            React__default['default'].createElement(Icon, { color: "currentColor", width: "20px" })),
         React__default['default'].createElement(Details, { hasHandler: !!onClick },
             React__default['default'].createElement(Text, { bold: true }, title),
             typeof children === "string" ? React__default['default'].createElement(Text, { as: "p" }, children) : children),
         onClick && (React__default['default'].createElement(CloseHandler, null,
             React__default['default'].createElement(IconButton, { size: "sm", variant: "text", onClick: onClick },
-                React__default['default'].createElement(Icon$k, { width: "15px", color: "currentColor" }))))));
+                React__default['default'].createElement(Icon$k, { width: "20px", color: "currentColor" }))))));
 };
 var templateObject_1$5, templateObject_2$1, templateObject_3$1, templateObject_4;
 
@@ -624,7 +624,7 @@ var insertSeparators = function (items, separator) {
         ]);
     }, []);
 };
-var DefaultSeparator = React__default['default'].createElement(Icon$i, { color: "currentColor", width: "15px" });
+var DefaultSeparator = React__default['default'].createElement(Icon$i, { color: "currentColor", width: "20px" });
 var Breadcrumbs = function (_a) {
     var _b = _a.separator, separator = _b === void 0 ? DefaultSeparator : _b, children = _a.children;
     var validItems = React.Children.toArray(children).filter(function (child) { return React.isValidElement(child); });
@@ -708,7 +708,7 @@ var Card = function (_a) {
 
 var CardBody = styled__default['default'].div(templateObject_1$a || (templateObject_1$a = __makeTemplateObject(["\n  ", "\n"], ["\n  ", "\n"])), styledSystem.space);
 CardBody.defaultProps = {
-    p: "15px",
+    p: "20px",
 };
 var templateObject_1$a;
 
@@ -717,7 +717,7 @@ var CardHeader = styled__default['default'].div(templateObject_1$b || (templateO
     return theme.card.cardHeaderBackground;
 }, styledSystem.space);
 CardHeader.defaultProps = {
-    p: "15px",
+    p: "20px",
 };
 var templateObject_1$b;
 
@@ -726,7 +726,7 @@ var CardFooter = styled__default['default'].div(templateObject_1$c || (templateO
     return theme.colors.borderColor;
 }, styledSystem.space);
 CardFooter.defaultProps = {
-    p: "15px",
+    p: "20px",
 };
 var templateObject_1$c;
 
@@ -753,7 +753,7 @@ var getScale = function (_a) {
     var scale = _a.scale;
     switch (scale) {
         case scales.SM:
-            return "15px";
+            return "20px";
         case scales.MD:
         default:
             return "32px";
@@ -840,7 +840,7 @@ var style = (_a = {},
         fontSize: "20px",
     },
     _a[sizes$1.LG] = {
-        fontSize: "15px",
+        fontSize: "20px",
     },
     _a[sizes$1.XL] = {
         fontSize: "40px",
@@ -1011,7 +1011,7 @@ var getScale$1 = function (_a) {
     var scale = _a.scale;
     switch (scale) {
         case scales$2.SM:
-            return "15px";
+            return "20px";
         case scales$2.MD:
         default:
             return "32px";
@@ -1560,7 +1560,7 @@ var shadows = {
 var spacing = [0, 4, 8, 16, 24, 32, 48, 64];
 var radii = {
     small: "4px",
-    default: "15px",
+    default: "20px",
     card: "32px",
     circle: "50%",
 };
@@ -1758,7 +1758,7 @@ var StyledModal = styled__default['default'].div(templateObject_1$u || (template
 var ModalHeader = styled__default['default'].div(templateObject_2$9 || (templateObject_2$9 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 15px;\n"], ["\n  display: flex;\n  align-items: center;\n  border-bottom: 1px solid #e9eaeb;\n  align-items: center;\n  padding: 12px 15px;\n"])));
 var ModalTitle = styled__default['default'](Flex)(templateObject_3$5 || (templateObject_3$5 = __makeTemplateObject(["\n  align-items: center;\n  flex: 1;\n"], ["\n  align-items: center;\n  flex: 1;\n"])));
 var Modal = function (_a) {
-    var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "15px" : _c;
+    var title = _a.title, onDismiss = _a.onDismiss, onBack = _a.onBack, children = _a.children, _b = _a.hideCloseButton, hideCloseButton = _b === void 0 ? false : _b, _c = _a.bodyPadding, bodyPadding = _c === void 0 ? "20px" : _c;
     return (React__default['default'].createElement(StyledModal, null,
         React__default['default'].createElement(ModalHeader, null,
             React__default['default'].createElement(ModalTitle, null,
@@ -2140,7 +2140,7 @@ var Logo$1 = function (_a) {
         React__default['default'].createElement(Icon$q, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
-        React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "15px" }, isPushed ? (React__default['default'].createElement(Icon$L, { width: "15px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$K, { width: "15px", color: "textSubtle" }))),
+        React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "20px" }, isPushed ? (React__default['default'].createElement(Icon$L, { width: "20px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$K, { width: "20px", color: "textSubtle" }))),
         isAbsoluteUrl ? (React__default['default'].createElement(StyledLink$1, { as: "a", href: href, "aria-label": "Pancake home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink$1, { to: href, "aria-label": "Pancake home page" }, innerLogo))));
 };
 var templateObject_1$y;
@@ -2291,7 +2291,7 @@ var MenuEntry = styled__default['default'].div(templateObject_3$6 || (templateOb
     return (secondary ? "0 32px" : "0 15px");
 }, function (_a) {
     var secondary = _a.secondary;
-    return (secondary ? "14px" : "15px");
+    return (secondary ? "14px" : "20px");
 }, function (_a) {
     var secondary = _a.secondary, theme = _a.theme;
     return (secondary ? theme.colors.background : "transparent");
@@ -2365,7 +2365,7 @@ var PanelBody = function (_a) {
     var handleClick = isMobile ? function () { return pushNav(false); } : undefined;
     return (React__default['default'].createElement(Container$3, null, links.map(function (entry) {
         var Icon = Icons[entry.icon];
-        var iconElement = React__default['default'].createElement(Icon, { width: "15px", mr: "8px" });
+        var iconElement = React__default['default'].createElement(Icon, { width: "20px", mr: "8px" });
         var calloutClass = entry.calloutClass ? entry.calloutClass : undefined;
         if (entry.items) {
             return (React__default['default'].createElement(Accordion, { key: entry.label, isPushed: isPushed, pushNav: pushNav, icon: iconElement, label: entry.label, initialOpenState: entry.initialOpenState, className: calloutClass }, isPushed &&
@@ -2399,11 +2399,11 @@ var PanelFooter = function (_a) {
     return (React__default['default'].createElement(Container$4, null,
         React__default['default'].createElement(SocialEntry, null,
             cakePriceUsd ? (React__default['default'].createElement(PriceLink, { href: priceLink, target: "_blank" },
-                React__default['default'].createElement(Icon$v, { width: "15px", mr: "8px" }),
+                React__default['default'].createElement(Icon$v, { width: "20px", mr: "8px" }),
                 React__default['default'].createElement(Text, { color: "textSubtle", bold: true }, "$" + cakePriceUsd.toFixed(3)))) : (React__default['default'].createElement(Skeleton, { width: 80, height: 24 })),
             React__default['default'].createElement(Flex, null, socials.map(function (social, index) {
                 var Icon = Icons$1[social.icon];
-                var iconProps = { width: "15px", color: "textSubtle", style: { cursor: "pointer" } };
+                var iconProps = { width: "20px", color: "textSubtle", style: { cursor: "pointer" } };
                 var mr = index < socials.length - 1 ? "8px" : 0;
                 if (social.items) {
                     return (React__default['default'].createElement(Dropdown, { key: social.label, position: "top", target: React__default['default'].createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React__default['default'].createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
@@ -2414,9 +2414,9 @@ var PanelFooter = function (_a) {
         React__default['default'].createElement(SettingsEntry, null,
             React__default['default'].createElement(Button, { variant: "text", onClick: function () { return toggleTheme(!isDark); } },
                 React__default['default'].createElement(Flex, { alignItems: "center" },
-                    React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "15px" }),
+                    React__default['default'].createElement(SunIcon, { color: isDark ? "textDisabled" : "text", width: "20px" }),
                     React__default['default'].createElement(Text, { color: "textDisabled", mx: "4px" }, "/"),
-                    React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "15px" }))))));
+                    React__default['default'].createElement(MoonIcon, { color: isDark ? "text" : "textDisabled", width: "20px" }))))));
 };
 var templateObject_1$C, templateObject_2$c, templateObject_3$7, templateObject_4$2;
 
@@ -2501,7 +2501,7 @@ var WalletCard = function (_a) {
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
         }, style: { justifyContent: "space-between" }, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
-        React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "15px" }, title),
+        React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "20px" }, title),
         React__default['default'].createElement(Icon, { width: "32px" })));
 };
 
@@ -2549,7 +2549,7 @@ var AccountModal = function (_a) {
     return (React__default['default'].createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
         React__default['default'].createElement(Text, { fontSize: "20px", bold: true, style: { whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", marginBottom: "8px" } }, account),
         React__default['default'].createElement(Flex, { mb: "32px" },
-            React__default['default'].createElement(LinkExternal, { small: true, href: "https://explorer-mainnet.maticvigil.com/address/" + account, mr: "15px" }, "View on Matic Explorer"),
+            React__default['default'].createElement(LinkExternal, { small: true, href: "https://explorer-mainnet.maticvigil.com/address/" + account, mr: "20px" }, "View on Matic Explorer"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
             React__default['default'].createElement(Button, { size: "sm", variant: "secondary", onClick: function () {

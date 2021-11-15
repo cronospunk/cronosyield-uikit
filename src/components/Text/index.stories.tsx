@@ -19,7 +19,7 @@ export default {
       name: "fontSize",
       table: {
         type: { summary: "string", detail: "Fontsize in px or em" },
-        defaultValue: { summary: "15px" },
+        defaultValue: { summary: "20px" },
       },
       control: {
         type: null,
@@ -44,7 +44,7 @@ export const Default: React.FC = () => {
       <Text>Default</Text>
       <Text bold>Bold text</Text>
       <Text small>Small text</Text>
-      <Text fontSize="15px">Custom fontsize</Text>
+      <Text fontSize="20px">Custom fontsize</Text>
       <Text color="red">Custom color</Text>
       <Text color="primary">Custom color from theme</Text>
       <Text color="secondary" textTransform="uppercase">

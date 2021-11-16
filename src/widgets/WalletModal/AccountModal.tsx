@@ -23,8 +23,8 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://explorer-mainnet.maticvigil.com/address/${account}`} mr="20px">
-        View on Matic Explorer
+      <LinkExternal small href={`https://cronos.crypto.org/explorer/address/${account}`} mr="20px">
+        View on Cronos Explorer
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>
